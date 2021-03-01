@@ -1,24 +1,30 @@
 <template>
   <div id="app">
-    <Navbar />
-    <b-container fluid>
-      <b-row class="text-center">
-        <b-col></b-col>
-        <b-col cols="9">
-          <router-view/>
-        </b-col>
-      </b-row>
-    </b-container>
+    <div class="bg-container">
+      <Navbar />
+      <b-container fluid>
+        <b-row class="text-center">
+          <b-col>
+            <Navigation />
+          </b-col>
+          <b-col cols="9">
+            <router-view/>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Navigation
   }
 }
 </script>
@@ -30,5 +36,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #165696;
+}
+
+.bg-container {
+  background: #f8f8f8;
+  height: 2000px;
 }
 </style>

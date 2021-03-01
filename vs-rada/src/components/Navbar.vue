@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="navbar-main">
     <b-navbar toggleable="lg" type="dark" shadow="lg" style="z-index: 100;">
       <b-navbar-brand to="/">
           <img src="..\assets\logo.png" width="40" height="40" alt="Верхньосировотська сільська рада">
@@ -38,29 +38,30 @@ export default {
 </script>
 
 <style>
-  .navbar {
-    background: #304586;
-    opacity: 96%;
-  }
+.navbar-main {
+  box-shadow: 0px 2px 10px 0px #A4A4A4;
+}
+.navbar {
+  background: #304586;
+  opacity: 96%;
+}
 
-  .navbar-nav {
-    font-size: 20px;
-  }
+.navbar-nav {
+  font-size: 20px;
+}
 
-  .navbar-item {
-    color: #ffffff;
-  }
+.navbar-item {
+  color: #ffffff;
+}
 
-  .dropdown:hover > .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown > .dropdown-toggle:active {
-  
-    pointer-events: none;
-  }
-  .dropdown-menu {
-    margin-top: 0;
-  }
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
 
+.dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+.dropdown-menu {
+  margin-top: 0;
+}
 </style>
