@@ -3,7 +3,7 @@
     <div class="bg-container">
       <Navbar />
       <b-container fluid>
-        <b-row class="text-center">
+        <b-row>
           <b-col>
             <Navigation />
           </b-col>
